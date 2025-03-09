@@ -18,9 +18,8 @@ int main() {
         sleep(10); // hang1
     }
 
-    int count = 0;
     char prev_num = 'x';
-    while (count != str.length() - 1) {
+    for (int count = 0; count != str.length() - 1; count++) {
         char c = str[count];
         if(c >= '0' && c <= '9') {
             if(c == prev_num + 1) {
@@ -32,7 +31,6 @@ int main() {
             }
             prev_num = c;
         } 
-        count++;
     }
     
     return 0;
