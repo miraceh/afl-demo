@@ -34,7 +34,7 @@ seeds:
 
 # Remove and regenerate seed files
 reseeds:
-	rm -rf seeds && make seed
+	rm -rf seeds && make seeds
 
 # Clean generated files
 clean:
